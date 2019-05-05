@@ -1,0 +1,619 @@
+
+@name:#557270;
+@bgcolor:#96a8ac;
+@tcolor2:#353535;
+@leo-b2color:rgb(7, 6, 18);
+@leo-b3color:#272727;
+@img-leo:"../img/leo/";
+@leo-bg3:"@{img-leo}leo_b3-bg.jpg";
+@leo4-bg:"@{img-leo}block4-bg.png";
+@leo6-bg:"@{img-leo}b6-bg.png";
+@leo7-bg:"@{img-leo}block7-bg.png";
+@leo8-bg:"@{img-leo}b8_bg.png";
+@bfz:16;
+@leo-grey:#5e5e5e;
+.leo{
+	p,h1{
+		.seg;
+	}
+	&_top &{
+		&_name{
+			color:@name;
+		}
+		&_slogan{
+
+		}
+		&_top-grad{
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8faaae+0,ffffff+100&0.93+0,1+0,1+100,0.93+100 */
+			background: -moz-linear-gradient(left, rgba(143,170,174,1) 70%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left, rgba(143,170,174,1) 70%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right, rgba(143,170,174,1) 70%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8faaae', endColorstr='#edffffff',GradientType=1 ); /* IE6-9 */
+		}
+	}
+	&_b2{
+		position: relative;
+		overflow: hidden;
+		&-bg{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 100%;
+			z-index: -1;
+			img{
+
+				min-width: 100%;
+				width: auto;
+				height: auto;
+				min-height: 100%;
+			}
+		}
+		&_text{
+			.flex-row{
+				height: 100%;
+				-ms-align-items: flex-end;
+				align-items: flex-end;
+
+			}
+		}
+		&-ast{
+			align-self: flex-start;
+		}
+		&-container{
+			box-shadow: (0/@bfz)*1em (0/@bfz)*1em (24/@bfz)*1em (0/@bfz)*1em rgba(0, 0, 0, 0.76);
+			background-color: rgba(255, 255, 255,0.761);
+			padding: (13/@bfz)*1em (100/@bfz)*1em;
+			margin-top: (70/@bfz)*1em;
+			width: (839/@bfz)*1em;
+			display: inline-block;
+			margin-left: auto;
+			text-align: left;
+			p{
+				font-size: (40/@bfz)*1em;
+				font-family: "Segoe UI";
+				color:@leo-b2color ;
+			}
+		}
+		&-img{
+			width: 90%;
+			height: 90%;
+			margin-bottom: (20/@bfz)*1em;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: (200/@bfz)*1em;
+		}
+	}
+	&_b3{
+		background-image: url( "@{leo-bg3}");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		&-text{
+			padding: (5/@bfz)*1em 0;
+			background-color: rgba(255, 255, 255,.76);
+			box-shadow: (0/@bfz)*1em (0/@bfz)*1em (24/@bfz)*1em (0/@bfz)*1em rgba(0, 0, 0, 0.76);
+
+
+			p{
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+				font-size: (24/@bfz)*1em;
+				line-height: 2;
+				color:@leo-b3color;
+				opacity: .87;
+				text-align: center;
+			}
+		}
+		&-cercle{
+			@tfz:72;
+			font-size:(@tfz/@bfz)*1em ;
+			color:@bgcolor;
+			font-weight: @Bold;
+			.cercle{
+				color:@white;
+				background-color:@name;
+				border-radius: 50%;
+				width: (233/@tfz)*1em;
+				height: (233/@tfz)*1em;
+				display: inline-block;
+				vertical-align: middle;
+				text-align: center;
+				&:before{
+					height: 100%;
+					width: 0;
+					margin-left: -(1/@bfz)*1em;
+					content: '';
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+			.discr{
+				display: inline-block;
+				position: relative;
+				
+				span{
+					@itfz:40;
+					font-weight: @Light;
+					font-size:(@itfz/@tfz)*1em;
+					color:@bgcolor;
+					line-height: (60/@itfz)*1em;
+					font-weight: @Light;
+					position: absolute;
+					top: 100%;
+					left: 1.2em;
+					display: inline-block;
+					width: (700/@itfz)*1em;
+				}
+			}
+		}
+		&-imgcont{
+			margin-top: (172/@bfz)*1em;
+			margin-left: -(110/@bfz)*1em;
+			margin-right: -(187/@bfz)*1em;
+		}
+	}
+
+	&_b4{
+		&-h1{
+			.seg;
+			.black;
+			@tfz:72;
+			font-size:(@tfz/@bfz)*1em ;
+			margin: (93/@tfz)*1em;
+			color:@name;
+			&:after{
+				display: none;
+			}
+		}
+		background-image:url("@{leo4-bg}");
+		background-repeat: no-repeat;
+		position: relative;
+		overflow: hidden;
+		&-decor{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+		}
+		&-list{
+			width: (700/@bfz)*1em;
+			padding: 0;
+			li{
+				display: flex;
+				justify-content: center;
+				margin: (103/@bfz)*1em 0;
+				p{
+					padding-left: (35/@bfz)*1em;
+					margin: 0;
+					width: 100%;
+					@tfz:30;
+					font-size:(@tfz/@bfz)*1em ;
+					color:#353535;
+				}
+			}
+		}
+		&-icon{
+			width: (45/@bfz)*1em;
+			height: (57/@bfz)*1em;
+		}
+	}
+	&_b5{
+		margin-top: (80/@bfz)*1em;
+		&-p{
+			@tfz:36;
+			font-size:(@tfz/@bfz)*1em ;
+			color:#000000;
+			.light;
+			padding-left: (121/@tfz)*1em;
+		}
+		&-bg{
+			position: relative;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b9ccd0+0,fdfefe+70,fdfefe+100 */
+			background: rgb(185,204,208); /* Old browsers */
+			background: -moz-linear-gradient(left, rgba(185,204,208,1) 0%, rgba(253,254,254,1) 90%, rgba(253,254,254,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left, rgba(185,204,208,1) 0%,rgba(253,254,254,1) 90%,rgba(253,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right, rgba(185,204,208,1) 0%,rgba(253,254,254,1) 90%,rgba(253,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9ccd0', endColorstr='#fdfefe',GradientType=1 ); /* IE6-9 */
+			&:after{
+				display: block;
+				clear: both;
+				content: '';
+			}
+		}
+		&-h1{
+			@tfz:72;
+			font-size:(@tfz/@bfz)*1em ;
+			
+			color:@name;
+			.black;
+			position: absolute;
+			left: 0;
+			bottom: 100%;
+			padding-left: (121/@tfz)*1em;
+			&:after{
+				display: none;
+			}
+			text-align: left;
+		}
+		&-el{
+			background-color:@bgcolor;
+			width: 45%;
+			padding-right: (45/@bfz)*1em;
+			padding-left: (121/@bfz)*1em;
+			margin: (67/@bfz)*1em 0;
+			float: left;
+			margin-bottom: ((123+64)/@bfz)*1em;
+			img
+			{
+				margin-bottom: -(123/@bfz)*1em;
+			}
+			p{
+				@tfz:48;
+				font-size:(@tfz/@bfz)*1em ;
+				color:@white;
+				margin: (30/@tfz)*1em 0;
+				text-align: center;
+				.light;
+			}
+			&-right{
+				margin-top: ((123+64)/@bfz)*1em;
+				img{
+					margin-bottom: 0;
+					margin-top: -(123/@bfz)*1em;
+				}
+				float: right;
+				padding-right:  (121/@bfz)*1em;
+				padding-left:  (45/@bfz)*1em;
+			}
+		}
+	}
+	&_b6{
+		&-bg{
+			background-image: url(@leo6-bg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			padding: (50/@bfz)*1em 0;
+		}
+		&-h1{
+			@tfz:72;
+			font-size:(@tfz/@bfz)*1em ;
+			color:@name;
+			.Black;
+			padding-left: (107/@tfz)*1em;
+			text-align: left;
+			&:after{
+				display: none;
+			}
+		}
+		&-p{
+			color:@leo-grey;
+			.bold;
+			@tfz:36;
+			font-size:(@tfz/@bfz)*1em;
+			line-height: (38/@tfz)*1em;
+			padding-left: (107/@tfz)*1em;
+		}
+		&-el{
+			p{
+				margin: 0;
+			}
+			display: flex;
+			align-items: center;
+		}
+		&-text{
+			@tfz:30;
+			font-size:(@tfz/@bfz)*1em ;
+			margin: (15/@tfz)*1em 0;
+			height: (111/@tfz)*1em;
+			color:@white;
+			.sbold;
+			background-color: @bgcolor;
+			border-radius: (5/@tfz)*1em;
+			padding: (14/@tfz)*1em 0;
+			padding-right: (20/@tfz)*1em;
+			padding-left: (107/@tfz)*1em;
+			width: 100%;
+			display: flex;
+			align-items: center;
+		}
+		&-point{
+			width: (45/@bfz)*1em;
+			min-width:(45/@bfz)*1em;
+			height: (45/@bfz)*1em;
+			background-color: @name;
+			border-radius: 50%;
+			margin: 0 (30/@bfz)*1em ;
+			position: relative;
+			&.point{
+				&-1{
+					transform: rotate(-25deg);
+					&:after{width: (200/@bfz)*1em;}
+				}
+				&-2{
+					transform: rotate(-20deg);
+				}
+				&-3{
+					transform: rotate(20deg);
+				}
+				&-4{
+					transform: rotate(25deg);
+					&:after{width: (200/@bfz)*1em;}
+				}
+			}
+			&:after{
+				display: inline-block;
+				content: '';
+				width: (150/@bfz)*1em;
+				height: (1/@bfz)*1em;
+				background-color: @name;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				left: ((45/2)/@bfz)*1em;
+			}
+
+		}
+		.chair{
+			display: inline-block;
+			max-width: 100%;
+		}
+	}
+	&_b7{
+		padding: (70/@bfz)*1em 0;
+		background-image: url(@leo7-bg);
+		padding-bottom: (300/@bfz)*1em;
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position: center;
+		&-h1{
+			text-align: left;
+			@tfz:60;
+			font-size:(@tfz/@bfz)*1em ;
+			.black;
+			color:@name;
+			span{
+				display: block;
+				@itfz:36;
+				font-size:(@itfz/@tfz)*1em ;
+			}
+			&:after{
+				display: none;
+			}
+		}
+		&-el{
+			border-radius: (10/@bfz)*1em;
+			background-color: rgb(150, 168, 172);
+			width: (608/@bfz)*1em;
+			height: (264/@bfz)*1em;
+			padding: (37/@bfz)*1em (56/@bfz)*1em;
+			margin-top: (73/@bfz)*1em;
+			p{
+				color:@white;
+				@tfz:24;
+				font-size:(@tfz/@bfz)*1em ;
+				.sbold;
+				line-height: (38/@tfz)*1em;
+				margin: 0;
+			}
+		}
+	}
+	&_b8{
+		background-image: url(@leo8-bg);
+		background-size: cover;
+		background-position: center;
+		height: (730/@bfz)*1em;
+		padding-top: (59/@bfz)*1em;
+		&-h1{
+			@tfz:83;
+			font-size:(@tfz/@bfz)*1em ;
+			text-align: center;
+			color:@name;
+			.light;
+			&:after{
+				display: none;
+			}
+
+		}
+		&-p{
+			@tfz:30;
+			.light;
+			text-align: center;
+			font-size:(@tfz/@bfz)*1em ;
+			width: (850/@tfz)*1em;
+			margin:(59/@tfz)*1em auto;
+		}
+	}
+}
+@media (max-width: 1846px) {
+	.leo{
+		font-size: 14px;
+	}
+}
+@media (max-width: 1610px) {
+	.leo{
+		font-size: 13px;
+	}
+}
+@media (max-width: 1410px) {
+	.leo{
+		font-size: 12px;
+	}
+}
+@media (max-width: 1310px) {
+	.leo{
+		font-size: 11px;
+	}
+}
+@media (max-width: 1210px) {
+	.leo{
+		font-size: 10px;
+	}
+}
+@media (max-width: 1110px) {
+	.leo{
+		font-size: 9px;
+	}
+}
+@media (max-width: 1010px) {
+	.leo{
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 910px) {
+	.leo{
+		font-size: 7px;
+	}
+}
+@media (max-width: 840px) {
+	.leo{
+		font-size: 5px;
+	}
+}
+
+@media (max-width: 767px){
+	.leo{
+		font-size: 14px;
+		@bfz:14;
+		div{
+			max-width: 100%;
+		}
+		p,h1{
+		}
+		h1{
+			font-size: (20/@bfz)*1em;
+		}
+		img{
+			max-width: (300/@bfz)*1em;
+			margin: 0 auto;
+		}
+		.asana_top-img{
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+		&_top-grad{
+			padding: (20/@bfz)*1em 0;
+		}
+		&_b2{
+
+			&-container{
+				padding: (15/@bfz)*1em;
+				width: 100%;
+				margin-top: (20/@bfz)*1em;
+			}
+		}
+		&_b3{
+			.flex-col-xs-32 {
+				justify-content: center;
+				display: flex;
+			}
+			&-cercle{
+				@tfz:40;
+				font-size:(@tfz/@bfz)*1em ;
+				display: inline-block;
+			}
+			&-imgcont{
+				margin: (20/@bfz)*1em auto;
+			}
+		}
+		& &_b5{
+			&-bg{padding-bottom: (50/@bfz)*1em;}
+			&-p{
+				@tfz:20;
+				font-size:(@tfz/@bfz)*1em ;
+				padding-left: (50/@tfz)*1em;
+			}
+			&-h1{
+				@tfz:30;
+				font-size:(@tfz/@bfz)*1em ;
+				padding-left: (50/@tfz)*1em;
+			}
+			&-el{
+				width: 100%;
+				float: none;
+				padding-left: (30/@bfz)*1em;
+				padding-right: (30/@bfz)*1em;
+				text-align: center;
+				margin: 0;
+					padding-top: (20/@bfz)*1em;
+				&-right{
+					padding-top: 0;
+					padding-bottom: (20/@bfz)*1em;
+				}
+			}
+		}
+		& &_b4{
+			&-h1{
+				@tfz:30;
+				font-size:(@tfz/@bfz)*1em ;
+			}
+			&-list{
+				li{
+					margin: (20/@bfz)*1em;
+					p{
+						@tfz:20;
+						font-size:(@tfz/@bfz)*1em ;
+					}
+				}
+			}
+		}
+		& &_b6{
+			&-h1{
+				@tfz:30;
+				font-size:(@tfz/@bfz)*1em ;
+				padding-left: (20/@tfz)*1em;
+				
+			}
+			&-p{
+				@tfz:20;
+				font-size:(@tfz/@bfz)*1em ;
+				
+				padding-left: (20/@tfz)*1em;
+			}
+			&-point{
+				display: none;
+			}
+			&-el{
+				padding-left: (20/@bfz)*1em;
+				padding-right: (20/@bfz)*1em;
+			}
+			&-text{
+				padding: (20/@bfz)*1em;
+				height: auto;
+			}
+			.chair{
+				max-width: (300/@bfz)*1em;
+			}
+		}
+		& &_b7{
+			padding-left: (20/@bfz)*1em;
+			padding-right: (20/@bfz)*1em;
+			&-h1{
+				@tfz:30;
+				font-size:(@tfz/@bfz)*1em ;
+				
+			}
+			&-el{
+				height: auto;
+				padding: (15/@bfz)*1em;
+			}
+		}
+		& &_b8{
+			&-h1{
+				font-size: (30/@bfz)*1em;
+			}
+			&-p{
+				max-width: 100%;
+			}
+		}
+
+	}
+
+}

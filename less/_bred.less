@@ -1,0 +1,36 @@
+.bred{
+	padding: 0px;
+	margin:20px 0px;
+	padding-left: 3px;
+	.rob;
+	.light;
+	&_item{
+		display: inline-block;
+		width: auto;
+		margin-left: -3px;
+		&:after{
+			display: inline-block;
+			padding: 0px 3px;
+			padding-left: 7px;
+			content: '>';
+			color: #384044;
+		}
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+
+	}
+	&_link{
+		color: #0b45df;
+		text-decoration: underline;
+	}
+	
+	p.bred_link,&_item:last-child &_link{
+		color: #384044;
+		text-decoration: none;
+		cursor: default;
+	}
+
+}

@@ -1,0 +1,115 @@
+.decor{
+	&_goods{
+		
+		background: url(../img/bg/bg5.jpg);
+		background-position: 100% 0%;
+		background-repeat: no-repeat;
+		
+	}
+
+	&_goods{
+		position: relative;
+		z-index: 2;
+		&-img{
+			position: absolute;
+			right: -8%;
+			bottom: -8%;
+		}
+	}
+	&_about{
+		position: relative;
+		&-img{
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			margin: auto;
+			right: -20%;
+			z-index: 2
+		}
+		&-img-1{
+			position: absolute;
+			bottom: -20%;
+			
+			left: -20%;
+			z-index: 2
+		}
+
+	}
+	&_news{
+
+	}
+	&_rew{
+		position: relative;
+		&-img{
+			position: absolute;
+			z-index: 2;
+			top: -8%;
+			right: -8%;
+
+		}
+		&-img-3{
+			position: absolute;
+			z-index: 2;
+			bottom: -40%;
+			left: -10%;
+		}
+	}
+	&_footer{
+		.ACenter;
+		&-img{
+			position: absolute;
+			top: -40%;
+			right: -20%;
+		}
+		&-img-1{
+			position: absolute;
+			bottom: -50%;
+			left: -10%;
+		}
+	}
+	&_textpage{
+		position: relative;
+		&-img{
+			bottom: 0px;
+			left: 7%;
+			margin: auto;
+			opacity: .05;
+			position: absolute;
+			top: 0px;
+
+		}
+		&-img-1{
+			opacity: .05;
+			position: absolute;
+			right: 0px;
+			top: 100%;
+
+		}
+	}
+}
+
+@media @tablet-max{
+	.decor{
+		&_footer{
+			display: none;
+		}
+	}
+}
+
+@media @phone-max{
+	.decor{
+		&_goods,
+		&_about,
+		&_rew,
+		&_footer,
+		&_textpage{
+			&-img{
+				&,&-1,&-2{display: 	none}
+			}
+		}
+	}
+}
+
+
+
+

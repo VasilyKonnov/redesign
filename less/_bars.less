@@ -1,0 +1,57 @@
+.bar{
+	padding: 50px 0px;
+	&_p,&_label{
+		font-size: 17px;
+		text-transform: uppercase;
+		color: @black;
+		.ava;
+	}
+	&_p{
+		margin: 0px;
+		line-height: 41px;
+	}
+	&_label{
+		display: inline-block;
+		width: 50px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	&_hold{
+		display: inline-block;
+		width: 100%;
+		margin-right: -60px;
+		padding-right: 60px;
+	}
+	&_inp{
+		height: 10px;
+		background: @greyli;
+		border-radius: 30px;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+	}
+	&_strip{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: @bar;
+		height: 100%;
+		width: 0%;
+		border-radius: 30px;
+	}
+	&_row{
+		margin-top: 25px;
+	}
+}
+
+@media @desktop-max{
+	.bar_p, .bar_label{
+		font-size: 14px;
+	}
+}
+
+@media @tablet-max{
+	.bar_p, .bar_label{
+		font-size: 11px;
+	}
+}

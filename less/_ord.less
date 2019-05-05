@@ -1,0 +1,82 @@
+.order{
+	padding: 50px 0px;
+	
+	&_h2{
+		font-size: 24px;
+		color: @ordc;
+		line-height: 0.75;
+		.bold;
+		.ava;
+	}
+	&_p{
+		font-size: 14px;
+		color: @ordc;
+	}
+	&_wind{
+		width:310px;
+		max-width: 100%;
+		margin:0px auto;
+	}
+	&_label{
+		font-size: 14px;
+		color: @ordc;
+		margin-bottom: 19px;
+		display: 	inline-block;
+	}
+	&_hr{
+		bottom: 0px;
+		height: 410px;
+		width: 1px;
+		border:1px solid @fbord;
+	}
+	&_or{
+		margin:30px 0px;
+	}
+	&_btn{
+		background-color: @bheader;
+		font-size: 14px;
+		color: @white;
+		border: 1px solid @bheader;
+		border-radius: 	16px;
+		width: 	100%;
+		cursor: pointer;
+		text-transform: none;
+		padding: 8px 0px;
+
+		.ava;
+		&:hover{
+			background-color: transparent;
+			color: @bheader;
+		}
+		&-h{
+			background-color: transparent;
+			color: @bheader;
+			&:hover{
+				background-color: @bheader;
+				color: @white;
+			}
+		}
+		&-yel{
+			display: 	inline-block;
+			width: 	auto;
+			padding-left: 15px;
+			padding-right: 15px;
+			background-color: @btn;
+			color: @black;
+			border: 1px solid @btn;
+			&:hover{
+				color: @black;
+			}
+		}
+	}
+	&_col-center{
+		margin:50px 0px;
+		text-align: center;
+		[class^="col"]{
+			display: 	inline-block;
+			float: 	none;
+			vertical-align: middle;
+		}
+	}
+}
+

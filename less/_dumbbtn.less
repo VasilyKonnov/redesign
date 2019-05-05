@@ -1,0 +1,30 @@
+.dumbbtn{
+	width: 79px;
+	height: 79px;
+	background: #084bf8;
+	color: #fff;
+	font-size: 40px;
+	position: fixed;
+	z-index: 99;
+	right: 0px;
+	bottom: 0px;
+	border-radius: 50%;
+	text-align: center;
+	padding: 0;
+	margin: 2%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s;
+	&.active{
+		visibility: visible;
+		opacity: .5;
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+	i{
+		display: block;
+		width: 100%;
+	}
+}

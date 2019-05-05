@@ -1,0 +1,401 @@
+
+.pxtoEm( @pixel, @base ) {  	
+	@return: @pixel/@base*1em;
+}
+.pblog{
+	@Ssize:14px;
+	&_item {
+		font-size: 14px;
+		position: relative;
+		min-height: 50%;
+		display: flex;
+		align-items: center;
+		&-large{
+
+			font-size:18.66px;
+			.pxtoEm(18.66px,@Ssize);
+			@value: return;
+			font-size: @@value;
+			overflow: hidden;
+		}
+		.cls;
+	}
+	&_col{
+		overflow: hidden;
+	}
+	&_name {
+		.pxtoEm(22,@Ssize);
+		@value: return;
+		font-size: @@value;
+		margin-top: 0px;
+	}
+	&_p,&_info,&_btn {
+		.pxtoEm(17,@Ssize);
+		@value: return;
+		font-size: @@value;
+	}
+	&_p,&_info{
+		letter-spacing: 0.01em;		
+	}
+	&_p{
+		line-height: 1.4em;
+	}
+	&_img-bg{
+		width: 33%;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		bottom: 0px;
+		background-size: cover;
+		background-position: center;
+	}
+	&_text{
+		
+		/* width: 67%; */
+		/* float: right; */
+		width: 	100%;
+		padding-left: 33%;
+		height: 100%;
+	}
+	&_item-rtl &{
+		&_img-bg{
+			right: 0px;
+			left: inherit;
+		}
+		&_text{
+			/* float: left; */
+			padding-right: 33%; 
+			padding-left: 0px;
+		}
+	} 
+	&_thold{
+		display: inline-block;
+		vertical-align: middle;
+		padding: 50px 15px;
+		position: relative;
+		left: 0.5rem;
+	}
+	&_info{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		z-index: 2;
+		span:first-child:after{
+			content: '\a0/'
+		}
+		a{
+			color: inherit;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	&_btn{
+		width: 100%;
+		box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+		padding-top: 13px;
+		padding-bottom: 13px;
+		max-width: 271px;
+
+		&-cont{
+			display: 	inline-block;
+			width: 	100%;
+			margin-left: -10.5rem;
+			padding-left: 11rem;
+			position: relative;
+			z-index: 1
+		}
+	}
+	&_item-large &{
+		&_btn-cont{
+			margin-left: -14.5rem;
+			padding-left: 15rem;
+		}
+		&_btn{
+			font-size: 1rem;
+		}
+		&_thold{
+			padding-left: 25px; 
+			padding-right: 20px;
+		}
+	}
+	&_lgrey{
+		background-color: @greyli;
+	}
+	&_lgrey &{
+		&_p,&_info{
+			color: @grey;
+		}
+		&_btn{
+			color: 	@white;
+			background-color: @bcolor;
+		}
+	}
+	&_grey{
+		background-color: @greyd;
+	}
+	&_grey &{
+		&_name,&_p,&_info{
+			color: @white;
+		}
+	}
+	&_special{
+		background-color: @pblogs;
+		padding: 40px 0px;
+		display: flex;
+		align-items: center;
+		height: auto;
+		min-height: auto;
+
+	}
+	&_special &{
+		&_name{
+			color: @white;
+			/* font-size: 38px; */
+			letter-spacing: 0.04em;
+			line-height: 1.4;
+
+			.pxtoEm(38,@Ssize);
+			@value: return;
+			font-size: @@value;
+		}
+		&_text{
+			display: 	inline-block;
+			width: 	100%;
+			padding-left: 0px;
+			padding-right: 0px;
+			/* float: 	none; */
+		}
+		&_cont{
+			vertical-align: middle;
+			display: 	inline-block;
+			width: auto;
+			padding-left: 68px;
+			padding-right: 68px;
+			width: 56%;
+		}
+		&_btn{
+			.comf;
+			.bold;
+			white-space: nowrap;
+			/* font-size:13px; */
+			.pxtoEm(13,@Ssize);
+			@value: return;
+			font-size: @@value;
+			vertical-align: middle;
+			width: 	auto;
+			margin-top: 10px;
+			i{
+				font-size: 10px;
+				padding-right: 20px;
+				vertical-align: middle;
+			}
+		}
+		&_img-cont{
+			width: 43%;
+			img{
+				display: 	block;	
+				margin: auto;	
+			}
+		}
+	}
+	&_img-cont{
+		display: 	inline-block;
+		width: 	auto;
+		vertical-align: middle;
+	}
+	&_subs{
+		background-color: @pblogs;
+		padding: 40px 0px;
+		display: flex;
+		align-items: center;
+		height: auto;
+		min-height: 50%;
+	}
+	&_subs &{
+		&_name{
+			color: @white;
+			.pxtoEm(38,@Ssize);
+			@value: return;
+			font-size: @@value;
+			/* font-size: 38px; */
+			letter-spacing: 0.04em;
+			line-height: 1.4;
+		}
+		&_cont{
+			vertical-align: middle;
+			display: 	inline-block;
+			width: auto;
+			padding-left: 68px;
+			padding-right: 68px;
+			width: 100%;
+		}
+		.va-middle{
+			width: 	100%;
+		}
+		&_text{
+			width: 	100%;
+			padding: 0px;
+		}
+		&_input{
+			margin-top: 50px;
+			display: 	inline-block;
+		}
+		&_btn{
+			background-color: @bcolor;
+			color: 	#fff;
+		}
+		&_btn-holder{
+			display: 	inline-block;
+			width: 100-70%;
+			margin-left: -10px;
+			padding-left: 10px;
+			text-align: center;
+		}
+	}
+	&_input{
+		border-radius: 22px;
+		box-shadow: 0px 2px 10px 0px fade(@black,20%);
+		background-color: @white;
+		border: none;
+		padding: 10px 15px;
+		width: 	100%;
+		font-size: 17px;
+		color: 	@pblogs;
+		&-holder{
+			width: 70%;
+			display: 	inline-block;
+		}
+	}
+}
+
+@media  (max-width:1700px){
+	.pblog_item{
+		font-size: 12px;
+	}
+}
+@media  (max-width:1600px){
+	.pblog_item{
+		font-size: 11px;
+	}
+}
+@media  (max-width:1500px){
+	.pblog_item{
+		font-size: 10px;
+	}
+}
+@media  (max-width:1400px){
+	.pblog_item{
+		font-size: 9px;
+	}
+}
+@media  (max-width:1300px){
+	.pblog_item{
+		font-size: 8px;
+	}
+	.pblog_btn{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media @desktop-max{
+	.pblog_item{
+		font-size: 7px;
+	}
+}
+@media @tablet-max{
+	.pblog{
+		&_item{
+			display: inline-block;
+			width: 50%;
+			float: left;
+			font-size: 12px;
+		}
+		&_col{
+			height: auto!important;
+		}
+		&_special,&_subs,&_tbfull{
+			width: 	100%;
+		}
+
+		&_btn-cont,&_item-large &_btn-cont{
+			display: 	block;	
+			width: 	auto;
+			padding: 0px;
+			margin:20px auto;
+			padding-left: 0px;
+			padding-right: 0px;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+	}
+}
+@media @phone-max{
+	.pblog{
+		&_item{
+			width: 	100%;
+			display: 	block;
+			&,&-large{font-size: 12px;}
+		}
+		&_special &{
+			&_cont{
+				width: 	300px;
+				margin:0 auto;
+				padding-left: 0px;
+				padding-right: 0px;
+				margin-bottom: 20px;
+				display: block;
+			}
+
+			&_img-cont{
+				display: 	block;	
+				width: 	100%;
+				padding: 15px;
+				img{
+					max-width: 300px;
+				}
+			}
+			&_name{
+				font-size: 20px;
+			}
+		}
+		&_subs &{
+			&_cont{
+				padding: 15px;
+				display: block;
+			}
+			&_btn-holder{
+				width: 190px;
+			}
+			&_input-holder{
+				width: 100%;
+				margin-left: -190px;
+				padding-left: 200px;
+			}
+
+		}
+
+		.container{
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+	}
+}
+@media @phone-max-xs{
+	.pblog{
+		&_subs &{
+			&_btn{
+				width: 100%;
+				max-width: 100%;
+			}
+			&_input-holder,&_btn-holder{
+				width: 300px;
+				margin-left: 0px;
+				padding-left: 0px;
+				display: block;
+				margin:20px auto;
+			}
+		}
+	}
+}

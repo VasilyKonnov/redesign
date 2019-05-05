@@ -1,0 +1,232 @@
+.goods{
+	&_slide{
+		text-align: center;
+	}
+	&_el{
+		width: 282px;
+		max-width: 100%;
+		display: inline-block;
+		border-radius: 20px;
+		box-shadow: 0px 0px 15px 0px fade(@black,20%);
+		padding: 20px;
+		overflow: hidden;
+		margin: 20px 0px;
+		background: #fff;
+	}
+	&_img{
+		position: relative;
+		width: 100%;
+	}
+	&_poster{
+		.ACenter;
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	&_sam{
+		width: 100%;
+		opacity: 0;
+	}
+	&_top{
+		position: relative;
+	}
+	&_heartbtn{
+		display: inline-block;
+		position: absolute;
+		top: 8px;
+		right: -8px;
+		z-index: 2;
+		font-size: 29px;
+		&:before{
+			content: '\e804';
+			font-family: 'fontello'
+		}
+		&.active {
+			&:before
+			{content: '\e805';}
+		}
+	}
+	&_name,&_discr{
+		text-align: center;
+		color: @gcolo;
+		line-height: 24px;
+		margin-top: 0px;
+		margin-bottom: 8px;
+	}
+	&_name{
+		font-size: 16px;
+		height: 72px;
+		vertical-align: middle;
+		&:before{
+			display: inline-block;
+			width: 	0px;
+			margin-left: -8px;
+			vertical-align: middle;
+			content: '';
+			height: 100%;
+		}
+		span{
+			display: 	inline-block;
+			vertical-align: middle;
+		}
+	}
+	&_discr{
+		font-size: 18px;
+		opacity: .74;
+	}
+	&_btn{
+		font-size: 14px;
+		text-align: center;
+		width: 100%;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		background: @bcolor;
+		color: @white;
+		margin-top: 3px;
+		border: 1px solid #fff;
+		transition:all .3s;
+		box-shadow: inset 0px 0px 0px 1px @bcolor;
+		i{
+			font-size: 20px;
+			line-height: 1;
+
+		}
+		&:hover{
+
+			background: @white;
+			color: 	@bcolor;
+		}
+	}
+	&_panel{
+		margin: 20px 0px;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	&_price{
+		text-align: center;
+		width: 170px;
+		color: @price;
+		font-size: 18px;
+		background: @priceshape;
+		border-radius: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: -35px;
+		padding: 8px;
+		padding-left: 35px;
+		padding-right: 15px;
+		line-height: 27px;
+		letter-spacing: 0.05em;
+		white-space: nowrap;
+		overflow: hidden;
+		span{
+			font-size: 	14px;
+		}
+	}
+	&_rs{
+		display: 	inline-block;
+		vertical-align: middle;
+		width: 	100%;
+		margin-left: -142px;
+		padding-left: 150px;
+		
+		text-align: right;
+	}
+
+	&_rew{
+		font-size: 12px;
+		vertical-align: middle;
+		color: @gcolo;
+		i{
+			font-size: 13.6px;
+		}
+		&:hover{
+			i:before{
+				content: '\f27a';
+			}
+		}
+	}
+	&_slick{
+		z-index: 2;
+		margin: 50px 0px;
+
+		&-arrows{
+			.ACenter;
+			
+			i{font-size: 	30px;}
+		}
+	}
+	.container{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+}
+.star{
+	&_list-gold &_item{
+		color:@gold;
+	}
+	&_list-yellow &_item{
+		color:@yell;
+		&:before{
+			font-size: 23px;
+		}
+	}
+	&_list{
+		vertical-align: middle;
+		cursor: default;
+	}
+	&_list,&_item{
+		display: 	inline-block;
+		margin: 0px;
+		padding: 0px;
+	}
+	&_list.clicked:hover &{
+		&_item{
+			&:before{
+				content: '\e803'!important;
+			}
+			&.hover{
+				&:before{
+					content: '\e806'!important;
+				}
+			}
+		}
+	}
+	&_item{
+		margin-left: -4px;
+		cursor: pointer;
+		overflow: hidden;
+		white-space: nowrap;
+		&:before{
+			display: 	inline-block;
+			content: '\e803';
+			font-size: 13.6px;
+			font-family: "fontello";
+		}
+		&.active{
+			&:before{
+				content: '\e806';
+			}
+		}
+		&.hover{
+			&:before{
+				content: '\e806';
+			}
+		}
+	}
+}
+
+
+@media @phone-max {
+	.goods{
+		&_el{
+			width: 	70%;
+		}
+		&_poster{
+			
+		}
+	}
+	
+}

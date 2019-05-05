@@ -1,0 +1,27 @@
+.ddl(){
+	&{
+		display: inline-block;
+		width: 100%;
+		&_ddl{
+			position: relative;
+		}
+		&_list{
+			display: inline-block;
+			position: absolute;
+			top: 100%;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			width: 100%;
+			max-height: 0px;
+			transition:max-height 0.3s ease-in-out;
+			overflow: hidden;
+		}
+		&_item{
+			display: block;
+		}
+		&_ddl.active &_list{
+			max-height: 9999px;
+		}
+	}
+}	

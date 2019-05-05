@@ -1,0 +1,267 @@
+.by{
+	&_loop{
+		background-image: url(../img/decor/by_loop_bg.jpg);
+		.backmoveright(@pref:'by_loop-',@t:30s,@w:2070px);
+		padding: 180px 0px;
+		margin-top: -180px;
+		margin-bottom: -180px;
+	}
+	&_logo{
+		text-align: center;
+		padding: 30px 0px;
+		&-cont{
+			display: inline-block;
+			width: auto;
+			position: relative;
+		}
+		&-img{
+			float: none;
+			display: inline-block;
+			width: 364px;
+			max-width: 100%;
+		}
+	}
+
+	&_row{
+		margin: 50px 0px;
+	}
+	&_row:nth-child(2n-1) &_left {
+	    z-index: 2;
+	    position: relative;
+	}
+
+	&_ldecor{
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		margin: auto;
+		left: 170px;
+		right: 0px;
+		opacity: .05;
+		z-index: -1;
+		height: auto;
+		width: auto;
+		max-width: 100%;
+	}
+	&_left,&_right{
+		display: inline-block;
+		vertical-align: middle;
+		width: 50%;
+		margin-left: -4px;
+	}
+	&_shape,&_decor{
+		position: relative;
+
+	}
+	&_shape{
+		z-index: 2;
+		background: fade(@shape,80%);
+		border-radius: 30px;
+		padding: 50px 30px;
+		margin-left: -31%;
+		margin-right: -31%;
+		&-img{
+			max-width: 100%;
+			display: inline-block;
+		}
+		&-icon,&-text,&-count{
+			display: inline-block;
+			vertical-align: middle;
+			width: auto;
+		}
+		&-icon,&-count{
+			width:150px;
+			text-align: center;
+		}
+		&-count{
+			font-size: 90px;
+			color: @tblue;
+			@sw:3px;
+			text-shadow: @sw  0px 0px @white,-@sw  0px 0px @white, 0px  @sw 0px @white, 0px -@sw 0px @white, @sw  @sw 0px @white,-@sw -@sw 0px @white, @sw -@sw 0px @white,-@sw  @sw 0px @white;
+			width: 150px;
+			text-align: center;
+			letter-spacing: 0.05em;
+		}
+		&-text{
+			width: 100%;
+			margin-left: -160px;
+			margin-right: -160px;
+			padding: 0px 160px;
+		}
+		&-name,&-p{
+			color:@white;
+		}
+		&-name{
+			font-size: 46px;
+			
+			letter-spacing: 0.026em;
+		}
+		&-p{
+			font-size: 32px;
+			
+		}
+	}
+	&_decor{
+		z-index: 1;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		min-height: 450px;
+
+		&-cont{
+			margin-left: -34%;
+			margin-right: -34%;
+		}
+
+		img{
+			/* opacity: 0; */
+			opacity: 0!important;
+		}
+	}
+	
+	&_left &{
+		&_shape{
+			padding-left: 51%;
+		}
+		&_decor-cont{
+			margin-left: 0px;
+		}
+	}
+	&_right &{
+		&_shape{
+			padding-right: 51%;
+		}
+		&_decor-cont{
+			margin-right: 0px;
+		}
+	}
+}
+
+
+@media @desktop-max
+{
+	.by{
+		&_left &_shape{
+			padding-left: 31%;
+		}
+		&_right &_shape{
+			padding-right: 31%;
+		}
+	}
+}
+@media @tablet-max{
+	.by{
+		&_loop{
+			background: url(../img/bg/bg3_1.jpg);
+			background-attachment: fixed;
+			animation: none !important;
+			padding:0px;
+			margin-top:0px;
+			margin-bottom:0px;
+		}
+		&_left, &_right{
+			width: 	100%;
+			display: 	block;	
+			margin-left: 	0px;
+		}
+		&_left, &_right,&_left &_shape, &_right &_shape{
+			margin-right: 	0px;
+			margin-left: 0px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&_left &_shape{
+			text-align: left;
+		}
+		&_right &_shape{
+			text-align: right;
+		}
+		&_shape{
+			background: transparent;
+			&-name{
+				line-height: 1;
+				margin:0px;
+
+			}
+			&-text{
+				margin-left: -87px;
+				margin-right: -87px;
+				padding-right: 87px;
+				padding-left: 87px;
+			}
+			&-icon, &-count{
+				width: 	80px;
+			}
+			&-count{
+				font-size: 60px;
+			}
+			&-icon{
+			}
+		}
+		&_decor-cont,&_shape-p{
+			display: 	none;
+		}
+		&_row{
+			position: relative;
+			margin:0px;
+		}
+	}
+}
+@media @phone-max{
+	.by{
+		.container{
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+		&_loop{
+			text-align: center;
+		}
+		&_left, &_right{
+			display: 	inline-block;
+			width: 	auto;
+			width: 	320px;
+			max-width: 100%;
+			padding: 0px;
+		}
+		&_row{
+			position: relative;
+			margin: 0px;
+			width: 320px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		&_row:nth-child(2n) &_left {
+		    float: right;
+		}
+
+		&_row:nth-child(2n-1) &_right {
+		    float: right;
+		}
+		&_shape{
+			padding: 20px 0px;
+			padding-right: 0px!important;
+			padding-left: 0px!important;
+			min-width: 320px;
+			display: 	inline-block;
+			.cls;
+			&-count{display: 	none;}
+			&-text{
+				text-align: left;
+				padding: 0px;
+				margin-right: 0px;
+				float: 	right;
+			}
+			&-name{
+				padding-left: 70px;
+				font-size: 26px;
+				line-height: 60px;
+			}
+			&-icon{
+				float: 	left;
+				width: 60px;
+			}
+		}
+	}
+}

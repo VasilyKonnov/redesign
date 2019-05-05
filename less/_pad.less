@@ -1,0 +1,56 @@
+.pag{
+	display: 	inline-block;
+	margin:0px;
+	padding: 0px;
+	&_item{
+		display: inline-block;
+		width: 	auto;
+		margin:3px 0px;
+		vertical-align: middle;
+		text-align: center;
+		min-width: 20px;
+	}
+	&_btn{
+		background: transparent;
+		border:1px solid  @btndis;;
+		text-transform: none;
+		padding:7px 10px;
+		.ava;
+		letter-spacing: normal;
+		color: @ordc;
+		font-size: 14px;
+		display: 	inline-block;
+		border-radius: 30px;
+		vertical-align: middle;
+		line-height: normal;
+		margin-left:0px;
+		text-align: center;
+		width: 50px;
+	}
+	&_icon{
+		background: transparent;
+		padding:0px;
+		border-bottom: none;
+		border-radius: none;
+		display: 	inline-block;
+		width: auto;
+		cursor: pointer;
+		i{
+			font-size: 40px;
+			&:before{
+				display: 	inline-block;
+				width: auto;
+				margin:0px;
+			}
+
+		}
+	}
+}
+
+@media @phone-max{
+	.pag{
+		width: 	100%;
+		margin:20px auto;
+	}
+
+}

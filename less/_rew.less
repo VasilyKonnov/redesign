@@ -1,0 +1,110 @@
+.rew{
+	background: @priceshape;
+	padding: 50px 0px;
+	position: relative;
+	&_slide{
+		text-align: center;
+		padding: 15px;
+	}
+	&_el{
+		text-align: left;
+		display: 	inline-block;
+		max-width: 100%;
+		position: relative;
+		box-shadow: 10.927px 12.02px 20px 0px rgba(0, 0, 0, 0.05);
+		border-radius: 20px;
+		background: @white;
+		/* background: #f00; */
+		width: 651px;
+		/* height: 262px; */
+		vertical-align: top;
+
+		padding: 50px 51px;
+		margin-top: 60px;
+		margin-bottom: 60px;
+		&:before{
+			content: '\201C';
+			font-size: 60px;
+			color: @bcolor;
+			position: absolute;
+			top: 20px;
+			right: 	50px;
+			display: 	inline-block;
+			width: 	auto;
+		}
+	}
+
+	&_photo{
+		border-radius: 50%;
+		overflow: hidden;
+		position: absolute;
+		top: -50px;
+		left: 46px;
+	}
+	&_name{
+		font-size: 18px;
+		color: 	@black;
+		display: 	inline-block;
+		line-height: 30px;
+	}
+	&_date{
+		letter-spacing: 0.01em;
+		display: 	inline-block;
+		line-height: 30px;
+		color: 	@grey;
+	}
+	&_text{
+		p{
+			font-size: 14px;
+			color: 	@grey;
+			line-height: 24px;
+			letter-spacing: 0.01em;
+		}
+		strong{
+			color: 	@black;
+			.normal;
+		}
+	}
+	
+	
+	&_slick-btnhold{
+		.ACenter;
+
+	}
+	.slick-arrow{
+		font-size: 40px;
+		z-index: 3;
+	}
+
+}
+
+@media @phone-max{
+	.rew{
+		&_el {
+			padding: 15px;
+			padding-top: 30px;
+		}
+		&_name {
+			font-size: 15px;
+		}
+		&_date {
+			font-size: 15px;
+		}
+		.rew .slick-arrow {
+		    padding: 0px;
+		    font-size: 20px;
+		}
+		/* &_slick-btnhold {
+			position: relative;
+		}
+			
+		& .slick-arrow {
+			position: relative;
+			padding: 0px;
+			width: 50%;
+			float: left;
+			margin-top: -40px;
+		} */
+	}
+}
+

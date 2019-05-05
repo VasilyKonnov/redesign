@@ -1,0 +1,87 @@
+.popup{
+	.ACenter(@position: fixed);
+	z-index: 100;
+	text-align: center;
+	background: fade(#000,30%);
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s;
+	&.active{
+		visibility: visible;
+		opacity: 1;
+	}
+	&:before{
+		content: '';
+		display: inline-block;
+		width: 0px;
+		height: 100%;
+		margin-left: -3px;
+		vertical-align: middle;
+
+	}
+	&_window{
+		padding: 36px;
+		display: inline-block;
+		vertical-align: middle;
+		width: 550px;
+		max-width: 100%;
+		background: #fff;
+		border-radius: 20px;
+		box-shadow: 10.927px 13.023px 20px 0px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		margin-left: -4px;
+		position: relative;	
+	}
+	&_h1{
+		font-size: 24px;
+		color: rgb(0, 0, 0);
+		&:after{
+			display: none;
+		}
+	}
+	&_p{
+		font-size: 16px;
+		color: rgba(0, 0, 0, 0.6);
+	}
+	&_input{
+		display: block;
+		margin: 20px auto;
+		width: 354px;
+		max-width: ((354*100)/550)*1%;
+		padding: 11.3px 19px;
+		border-radius: 30px;
+		border-width: 1px;
+		border-color: rgb(8, 75, 248);
+		border-style: solid;
+	}
+	&_btn{
+		font-size: 15px;
+		text-transform: none;
+	}
+	&_close{
+		font-size: 20px;
+		color: #000;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 15px;
+		cursor: pointer;
+	}
+
+
+}
+
+@media @phone-max{
+	.popup{
+		&_window{
+			width: 100%;
+			padding: 15px;
+			max-width: 330px;
+		}
+		&_btn{
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}

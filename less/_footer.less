@@ -1,0 +1,116 @@
+.footer{
+	padding-top: 50px;
+	background: @fcolor;
+	*{color: 	@white;}
+	&_p{
+		font-size: 14px;
+		line-height: 24px;
+		.os;
+	}
+	&_link{
+		font-size: 16px;
+		line-height: 22px;
+		.comf;
+	}
+	&_row{
+		margin:10px 0px;
+	}
+	&_name{
+		font-size: 14px;
+		line-height: 22px;
+		.comf;
+		.bold;
+		text-transform: uppercase;
+		margin-top: 50px;
+	}
+	&_list{
+		padding: 0px;
+
+	}
+	&_item{
+		display: block;
+	}
+	&_flink{
+		color:@flcolor;
+		font-size: 14px;
+		line-height: 1.857;
+		transition:color .3s;
+		.os;
+		&-spec{
+			text-decoration: underline;
+			margin-top: 76px;
+		}
+		&:hover{
+			color: @white;
+		}
+	}
+	&_logo{
+		max-width: 240px;
+	}
+	a.footer_flink{
+		display: inline-block;
+	}
+	p.footer_flink{
+		margin: 0px;
+		&:hover{
+			color: @flcolor;
+		}
+	}
+	.decor_footer{
+		z-index: 1
+	}
+	.container{
+		position: relative;
+		z-index: 2;
+	}
+}
+.social{
+	padding: 0px;
+	margin: 20px 0px;
+	&_item{
+		display: inline-block;
+		width: auto;
+		
+		border: 1px solid @sbord;
+		border-radius: 50%;
+		overflow: hidden;
+		width: 41px;
+		height: 41px;
+		text-align: center;
+		transition:all .3s;
+		&:hover{
+			background: @sbord;
+			border: 1px solid @white;
+		}
+		i{
+			font-size: 18px;
+				line-height: 42px;
+			&.icon-facebook{
+				font-size: 24px;
+				margin:0px;
+			}
+		}
+
+	}
+}
+.copy{
+	padding: 20px 0px;
+	border-top: 1px solid rgb(61, 61, 61);
+	&_link{
+		font-size: 13px;
+		line-height: 24px;
+		color: @copycolor;
+		display: inline-block;
+		.os;
+	}
+}
+
+
+@media @desktop-max{
+	.footer{
+		.container{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}

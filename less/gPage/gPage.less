@@ -1,0 +1,60 @@
+.font(@fontname:'segoeui',@fontpath:"../font/segoeui" , @fontpref:"",@fweight:@Normal,	@fital:normal);
+.font(@fontname:'segoeui',@fontpath:"../font/segoeui" , @fontpref:"-black",@fweight:@Black,	@fital:normal);
+.font(@fontname:'segoeui',@fontpath:"../font/segoeui" , @fontpref:"-bold",@fweight:@Bold,	@fital:normal);
+.font(@fontname:'segoeui',@fontpath:"../font/segoeui" , @fontpref:"-light",@fweight:@Light,	@fital:normal);
+.seg{
+	font-family: segoeui,'segoeui';
+}
+@import url(flexGrid.less);
+
+@import url(asana.less);
+@import url(leo.less);
+
+@import url(gTop.less);
+@import url(bigluck.less);
+
+
+@import url(space.less);
+
+@import url(oslin.less);
+
+/* gpage */
+.text{
+	p{
+		.seg;
+		font-size: (21.89/@bfz)*1em;
+		margin: (30/@bfz)*1em (0/@bfz)*1em;
+	}
+}
+
+
+.title{
+	@tfz:72;
+	font-size:(@tfz/@bfz)*1em ;
+
+	/* font-size: (72/@bfz)*1em; */
+	.Black;
+	display: inline-block;
+	color:@asana-grey;
+	.seg;
+	span{
+		@stfz:77.96;
+		font-size:(@stfz/@tfz)*1em ;
+
+		/* font-size:(77.96/@bfz)*1em; */
+		&.small{
+			color:@white;
+			.Light;
+			@itfz:39;
+			font-size:(@itfz/@stfz)*1em ;
+
+			/* font-size: (39/@bfz)*1em; */
+			float: right;
+		}
+	}
+}
+.mw-150{
+	img{max-width: 150%}
+}
+
+@import url(monb.less);

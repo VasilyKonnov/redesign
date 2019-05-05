@@ -1,0 +1,38 @@
+.share{
+		margin: 50px 0px;
+	&_border{
+		padding: 50px 0px;
+		border: 1px solid @grey;
+		border-right: 0px;
+		border-left: 0px;
+		max-width: 1551px;
+		margin: auto;
+	}
+	&_h1{
+		
+		font-size: 40px;
+		color: @copycolor;
+		
+	}
+	&_list,&_item,&_h1{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&_link{
+		font-size: 28px;
+		color: @grey;
+		width: 81px;
+		height: 81px;
+		border-radius: 50%;
+		border:1px solid @grey;
+		display: block;
+		vertical-align: top;
+		line-height: 81px;
+		transition: all .3s;
+		&:hover{
+			background-color: @grey;
+			color: @white;
+		}
+	}
+}

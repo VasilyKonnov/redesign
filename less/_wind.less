@@ -1,0 +1,94 @@
+.wind{
+	text-align: center;
+	padding-left: 8px;
+	.ACenter();
+	&:before{
+		content: '';
+		height: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		width: 0px;
+		margin-left: -8px;
+
+	}
+	&_cont{
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		max-width: 1414px;
+		z-index: 2;
+
+	}
+	&_g{
+		min-width: 330px;
+		width: 90%;
+		position: relative;
+		display: inline-block;
+	}
+	&_el{
+		text-align: center;
+		border-radius: 32px;
+		background: @wbg;
+		padding: 13px;
+		width: 100%;
+		position: relative;
+		
+		display: inline-block;
+		vertical-align: middle;
+		
+		/* z-index: 2; */
+		*{
+			position: relative;
+			z-index: 4
+		}
+	}
+	&_btn{
+		display: inline-block;
+		font-size: 15.65px;
+		color:@black;
+		line-height: 1;
+		text-transform: none;
+		letter-spacing: 0px;
+		padding: 11px 50px;
+		margin-top: 50px;
+	}
+	&_name{
+		font-size: 24px;
+		color: @wcolor;
+		line-height: 0.75;
+		i{
+			font-size: 30px;
+			color: @gc;
+		}
+	}
+	&_nmb{
+		font-size: 28px;
+		line-height: 18px;
+		color: @wcolor;
+	}
+	&_cons{
+		font-size: 21px;
+		line-height: 18px;
+		color: @wcolor;
+	}
+	&_decor{
+		.ACenter();
+		opacity: .5;
+		&-zi2{
+			z-index: 2;
+		}
+		&-img{
+			position: absolute;
+			right: 90%;
+			bottom: -71%;
+			z-index: 1;
+			&-1{
+				position: absolute;
+				left: 90%;
+				top: -71%;
+				z-index: 3;
+			}
+
+		}
+	}
+}

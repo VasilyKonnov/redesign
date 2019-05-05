@@ -1,0 +1,158 @@
+.backmoveup(@pref:'',@t:30s,@h:1063px)
+{
+	@animname:~"@{pref}backmoveup";
+	&{
+		background-position: 0% 50%;
+		animation-name: @animname;
+		animation-iteration-count: infinite;
+		animation-duration: @t;
+		animation-timing-function: linear;
+	}
+	@keyframes @animname{
+		0%{
+			background-position: 0% 0;
+		}
+		100%{
+			background-position: 0px (@h*-1);
+		} 
+	}
+} 
+.backmoveleft(@pref:'',@t:30s,@w:1920px)
+{
+	@animname:~"@{pref}backmoveleft";
+	&{
+		background-position: 0% 50%;
+		animation-name: @animname;
+		animation-iteration-count: infinite;
+		animation-duration: @t;
+		animation-timing-function: linear;
+	}
+	@keyframes @animname{
+		0%{
+			background-position: 0% 0;
+		}
+		100%{
+			background-position: (@w*-1) 0px;
+		} 
+	}
+} 
+.backmoveright(@pref:'',@t:30s,@w:1920px)
+{
+	@animname:~"@{pref}backmoveright";
+	&{
+		background-position: 0% 50%;
+		animation-name: @animname;
+		animation-iteration-count: infinite;
+		animation-duration: @t;
+		animation-timing-function: linear;
+	}
+	@keyframes @animname{
+		0%{
+			background-position: 0% 0;
+		}
+		100%{
+			background-position: (@w*1) 0px;
+		} 
+	}
+} 
+
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+//--------------------------------------------------------- flash
+@keyframes flash {
+	from, 50%, to {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+}
+
+.flash {
+	animation-name: flash;
+}
+//--------------------------------------------------------- fadeIn
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+	&-p{
+		opacity: 0
+	}
+}
+//--------------------------------------------------------- fadeInLeft
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeInLeft {
+	animation-name: fadeInLeft;
+	&-p{
+		opacity: 0;
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+//--------------------------------------------------------- fadeInRight
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		transform: translate3d(100%, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeInRight {
+	animation-name: fadeInRight;
+	&-p{
+		opacity: 0;
+		transform: translate3d(100%, 0, 0);
+	}
+}
+
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeInUp {
+	animation-name: fadeInUp;
+	&-p{
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+}
+
+
+
