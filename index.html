@@ -285,27 +285,28 @@
 
             <!-- BEGIN TOP CATEGORY -->
             <div class="top-category--wrapper">
-                <div class="top-category--mob">
 
-                    <div class="hmenu_mbtn--category">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
 
-                    <div class="top-category--mob__title">
-                        <h3>Категории товаров</h3>
-                    </div>
+                <!--<div class="top-category&#45;&#45;mob">-->
+                    <!--<div class="hmenu_mbtn&#45;&#45;category">-->
+                        <!--<span></span>-->
+                        <!--<span></span>-->
+                        <!--<span></span>-->
+                    <!--</div>-->
+                    <!--<div class="top-category&#45;&#45;mob__title">-->
+                        <!--<h3>Категории товаров</h3>-->
+                    <!--</div>-->
+                <!--</div>-->
 
-                </div>
+
                 <div class="top-category">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a class="top-category--item">
                                 <span class="top-category--img" style="background-image: url('img/rediz-img/massog-kreslo.png')"></span>
                                 <span class="top-category--name">Массажные</span>
                             </a>
-                            <ul class="inner-category">
+                            <ul class="inner-category active">
                                 <p>По брендам</p>
                                 <li><a href="#">Top Technology</a></li>
                                 <li><a href="#">iRobot</a></li>
@@ -313,7 +314,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="top-category--item">
                                 <span class="top-category--img" style="background-image: url('img/rediz-img/robot-pilesos.png')"></span>
                                 <span class="top-category--name">Роботы-пылесосы</span>
                             </a>
@@ -325,7 +326,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="top-category--item">
                                 <span class="top-category--img" style="background-image: url('img/rediz-img/massage-nakidka.png')"></span>
                                 <span class="top-category--name">Массажные-накидки</span>
                             </a>
@@ -337,7 +338,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="top-category--item">
                                 <span class="top-category--img" style="background-image: url('img/rediz-img/massage-nakidky-2.png')"></span>
                                 <span class="top-category--name">Массажеры</span>
                             </a>
@@ -356,7 +357,7 @@
         <!-- HEADER EOF   -->
 		<main class="content js-padbott">
 
-            <!-- BEGIN SLIDER -->
+            <!-- BEGIN SLIDER WRAPPER -->
             <div class="slider-vs-sidebar--wrapper">
 
                 <div class="sidebar-slider">
@@ -367,8 +368,22 @@
                     <ul class="sidebar-category">
 
                         <li class="sidebar-category--item">
-                            <div class="sidebar-category--img" style="background-image: url('img/rediz-img/massog-kreslo.png')"></div>
-                            <div class="sidebar-category--txt"><p>Массажные кресла</p></div>
+                            <div class="sidebar-category--item-wrapper">
+                                <div class="sidebar-category--img" style="background-image: url('img/rediz-img/massog-kreslo.png')"></div>
+                                <div class="sidebar-category--txt"><p>Массажные кресла</p></div>
+                            </div>
+                            <ul class="inner-category active">
+                                <p>По брендам</p>
+                                <li><a href="#">Top Technology</a></li>
+                                <li><a href="#">iRobot</a></li>
+                                <li><a href="#">Top Technology</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-category--item">
+                            <div class="sidebar-category--item-wrapper">
+                                <div class="sidebar-category--img" style="background-image: url('img/rediz-img/robot-pilesos.png')"></div>
+                                <div class="sidebar-category--txt">Роботы пылесосы</div>
+                            </div>
                             <ul class="inner-category">
                                 <p>По брендам</p>
                                 <li><a href="#">Top Technology</a></li>
@@ -377,8 +392,10 @@
                             </ul>
                         </li>
                         <li class="sidebar-category--item">
-                            <div class="sidebar-category--img" style="background-image: url('img/rediz-img/robot-pilesos.png')"></div>
-                            <div class="sidebar-category--txt">Роботы пылесосы</div>
+                            <div class="sidebar-category--item-wrapper">
+                                <div class="sidebar-category--img" style="background-image: url('img/rediz-img/massage-nakidka.png')"></div>
+                                <div class="sidebar-category--txt">Массажные накидки</div>
+                            </div>
                             <ul class="inner-category">
                                 <p>По брендам</p>
                                 <li><a href="#">Top Technology</a></li>
@@ -387,8 +404,10 @@
                             </ul>
                         </li>
                         <li class="sidebar-category--item">
-                            <div class="sidebar-category--img" style="background-image: url('img/rediz-img/massage-nakidka.png')"></div>
-                            <div class="sidebar-category--txt">Массажные накидки</div>
+                            <div class="sidebar-category--item-wrapper">
+                                <div class="sidebar-category--img" style="background-image: url('img/rediz-img/massage-nakidky-2.png')"></div>
+                                <div class="sidebar-category--txt">Массажеры</div>
+                            </div>
                             <ul class="inner-category">
                                 <p>По брендам</p>
                                 <li><a href="#">Top Technology</a></li>
@@ -396,19 +415,7 @@
                                 <li><a href="#">Top Technology</a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-category--item">
-                            <div class="sidebar-category--img" style="background-image: url('img/rediz-img/massage-nakidky-2.png')"></div>
-                            <div class="sidebar-category--txt">Массажеры</div>
-                            <ul class="inner-category">
-                                <p>По брендам</p>
-                                <li><a href="#">Top Technology</a></li>
-                                <li><a href="#">iRobot</a></li>
-                                <li><a href="#">Top Technology</a></li>
-                            </ul>
-                        </li>
-
                     </ul>
-
                 </div>
 
                 <div class="first-slider--wrapper">
