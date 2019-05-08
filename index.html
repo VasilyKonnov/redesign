@@ -118,7 +118,7 @@
             </li>
             <li class="hmenu_item">
                 <form action="search.php" class="search_form header-search" method="get">
-                    <input type="tel" placeholder="Перезвонить? Введите номер">
+                    <input type="tel" required class="phone-mask" placeholder="Перезвонить? Введите номер">
                     <button class="header-search--button"></button>
                 </form>
             </li>
@@ -216,7 +216,7 @@
                         <ul class="hmenu-desc">
                             <li class="hmenu_item">
                                 <form action="search.php" class="search_form header-search" method="get">
-                                    <input type="tel" placeholder="Перезвонить? Введите номер">
+                                    <input type="tel" required class="phone-mask" placeholder="Перезвонить? Введите номер">
                                     <button class="header-search--button"></button>
                                 </form>
                             </li>
@@ -306,7 +306,7 @@
                                 <span class="top-category--img" style="background-image: url('img/rediz-img/massog-kreslo.png')"></span>
                                 <span class="top-category--name">Массажные</span>
                             </a>
-                            <ul class="inner-category active">
+                            <ul class="inner-category">
                                 <p>По брендам</p>
                                 <li><a href="#">Top Technology</a></li>
                                 <li><a href="#">iRobot</a></li>
@@ -372,7 +372,7 @@
                                 <div class="sidebar-category--img" style="background-image: url('img/rediz-img/massog-kreslo.png')"></div>
                                 <div class="sidebar-category--txt"><p>Массажные кресла</p></div>
                             </div>
-                            <ul class="inner-category active">
+                            <ul class="inner-category">
                                 <p>По брендам</p>
                                 <li><a href="#">Top Technology</a></li>
                                 <li><a href="#">iRobot</a></li>
@@ -421,7 +421,7 @@
                 <div class="first-slider--wrapper">
                     <div class="first-slider--search">
                         <form action="#">
-                            <input type="search" placeholder="Найти легко. Поиск товара">
+                            <input type="search" required placeholder="Найти легко. Поиск товара">
                             <button type="submit"></button>
                         </form>
                     </div>
@@ -2830,8 +2830,11 @@
 
 	</div>
 	<!-- BODY EOF   -->
-	<div class="icon-load"></div>		
+	<div class="icon-load"></div>
 	<script type="text/javascript" src="js/custom.min.js" ></script>
+    <script type="text/javascript" src="js/inputmask.js" ></script>
+    <script type="text/javascript" src="js/jquery.inputmask.js" ></script>
+    <script type="text/javascript" src="js/js-update.js" ></script>
 	<script type="text/javascript" src="js/index.min.js" ></script>
 </body>
 </html>
